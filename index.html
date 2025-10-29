@@ -22,6 +22,9 @@
       tailwind.config = {
         theme: {
           extend: {
+            fontFamily: {
+              manrope: ["Manrope", "sans-serif"],
+            },
             colors: {
               clifford: "#da373d",
             },
@@ -32,11 +35,11 @@
   </head>
   <body>
     <main class="max-w-screen-xl mx-auto px-16 lg:px-28">
-      <!-- section tea time -->
+      <!-- section banner -->
       <div class="flex items-center pt-10 mb-20">
         <!-- text area -->
         <div class="space-y-3">
-          <h1 class="text-5xl md:text-7xl">
+          <h1 class="text-5xl font-bold md:text-6xl">
             It's good <br />
             tea time at The <br />
             Tea House
@@ -56,16 +59,72 @@
         <div class="relative">
           <!-- image -->
           <div>
-            <img class="w-full" src="/images/banner.png" alt="banner image" />
+            <img
+              class="w-full h-auto object-contain"
+              src="/images/banner.png"
+              alt="banner image"
+            />
           </div>
           <!-- card -->
           <div
-            class="absolute flex items-center gap-2 selection bg-white shadow-lg px-2 py-3 md:px-10 lg:py-14 rounded-lg top-28 md:top-80 md:left-32 lg:left-28"
+            class="absolute flex items-center gap-2 bg-white shadow-lg px-2 py-3 md:px-3 lg:py-5 rounded-lg top-28 md:top-80 md:left-32 lg:left-28"
           >
             <i class="fa-solid fa-star text-amber-500 text-xl"></i>
             <div>
               <h1 class="lg:text-2xl font-bold">5.00</h1>
               <p class="text-gray-500">Trust Pilot Ratings</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- feature products section -->
+      <div class="flex flex-col justify-center items-center mt-48 mb-40">
+        <!-- section title & description -->
+        <div class="text-center">
+          <h2 class="text-3xl font-bold mb-4">Our Featured Products</h2>
+          <p class="mb-8 text-gray-400 mx-4 md:mx-20">
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form, by injected
+            humour, or randomised words which don't look even slightly
+            believable.
+          </p>
+        </div>
+        <!-- feature items -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div
+            class="flex flex-col justify-center items-center bg-gradient-to-b from-gray-100 to-transparent rounded-lg"
+          >
+            <img class="pt-6" src="/images/tea-1.png" alt="Cup of Milk Tea" />
+            <div class="text-center p-6">
+              <h3 class="text-xl font-bold">Milk Tea</h3>
+              <p>Creamer could be replaced by fresh milk</p>
+            </div>
+          </div>
+          <div
+            class="flex flex-col justify-center items-center bg-gradient-to-b from-gray-100 to-transparent rounded-lg"
+          >
+            <img class="pt-6" src="/images/tea-2.png" alt="Cup of Milk Tea" />
+            <div class="text-center p-6">
+              <h3 class="text-xl font-bold">Black Tea</h3>
+              <p>Creamer could be replaced by fresh milk</p>
+            </div>
+          </div>
+          <div
+            class="flex flex-col justify-center items-center bg-gradient-to-b from-gray-100 to-transparent rounded-lg"
+          >
+            <img class="pt-6" src="/images/tea-3.png" alt="Cup of Milk Tea" />
+            <div class="text-center p-6">
+              <h3 class="text-xl font-bold">Lemon Tea</h3>
+              <p>Creamer could be replaced by fresh milk</p>
+            </div>
+          </div>
+          <div
+            class="flex flex-col justify-center items-center bg-gradient-to-b from-gray-100 to-transparent rounded-lg"
+          >
+            <img class="pt-6" src="/images/tea-4.png" alt="Cup of Milk Tea" />
+            <div class="text-center p-6">
+              <h3 class="text-xl font-bold">Green Tea</h3>
+              <p>Creamer could be replaced by fresh milk</p>
             </div>
           </div>
         </div>
