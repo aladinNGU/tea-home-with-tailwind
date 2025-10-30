@@ -39,7 +39,7 @@
       <div class="flex items-center pt-10 mb-20">
         <!-- text area -->
         <div class="space-y-3">
-          <h1 class="text-5xl font-bold md:text-6xl">
+          <h1 class="text-5xl font-bold md:text-6x leading-tight">
             It's good <br />
             tea time at The <br />
             Tea House
@@ -60,7 +60,7 @@
           <!-- image -->
           <div>
             <img
-              class="w-full h-auto object-contain"
+              class="w-full h-auto object-contain transition-transform duration-300 ease-in-out hover:scale-105"
               src="/images/banner.png"
               alt="banner image"
             />
@@ -90,11 +90,15 @@
           </p>
         </div>
         <!-- feature items -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           <div
             class="flex flex-col justify-center items-center bg-gradient-to-b from-gray-100 to-transparent rounded-lg"
           >
-            <img class="pt-6" src="/images/tea-1.png" alt="Cup of Milk Tea" />
+            <img
+              class="pt-6 transition-transform duration-300 ease-in-out hover:scale-105"
+              src="/images/tea-1.png"
+              alt="Cup of Milk Tea"
+            />
             <div class="text-center p-6">
               <h3 class="text-xl font-bold">Milk Tea</h3>
               <p>Creamer could be replaced by fresh milk</p>
@@ -103,7 +107,11 @@
           <div
             class="flex flex-col justify-center items-center bg-gradient-to-b from-gray-100 to-transparent rounded-lg"
           >
-            <img class="pt-6" src="/images/tea-2.png" alt="Cup of Milk Tea" />
+            <img
+              class="pt-6 transition-transform duration-300 ease-in-out hover:scale-105"
+              src="/images/tea-2.png"
+              alt="Cup of Milk Tea"
+            />
             <div class="text-center p-6">
               <h3 class="text-xl font-bold">Black Tea</h3>
               <p>Creamer could be replaced by fresh milk</p>
@@ -112,7 +120,11 @@
           <div
             class="flex flex-col justify-center items-center bg-gradient-to-b from-gray-100 to-transparent rounded-lg"
           >
-            <img class="pt-6" src="/images/tea-3.png" alt="Cup of Milk Tea" />
+            <img
+              class="pt-6 transition-transform duration-300 ease-in-out hover:scale-105"
+              src="/images/tea-3.png"
+              alt="Cup of Milk Tea"
+            />
             <div class="text-center p-6">
               <h3 class="text-xl font-bold">Lemon Tea</h3>
               <p>Creamer could be replaced by fresh milk</p>
@@ -121,7 +133,11 @@
           <div
             class="flex flex-col justify-center items-center bg-gradient-to-b from-gray-100 to-transparent rounded-lg"
           >
-            <img class="pt-6" src="/images/tea-4.png" alt="Cup of Milk Tea" />
+            <img
+              class="pt-6 transition-transform duration-300 ease-in-out hover:scale-105"
+              src="/images/tea-4.png"
+              alt="Cup of Milk Tea"
+            />
             <div class="text-center p-6">
               <h3 class="text-xl font-bold">Green Tea</h3>
               <p>Creamer could be replaced by fresh milk</p>
@@ -129,6 +145,185 @@
           </div>
         </div>
       </div>
+      <!-- Great Tea Freshly Presented Section -->
+      <section
+        class="flex flex-col lg:flex-row gap-12 lg:gap-16 mb-24 lg:mb-40 items-center"
+      >
+        <!-- Image Grid Area -->
+        <div class="w-full lg:w-1/2">
+          <div class="grid grid-cols-2 gap-6 max-w-md mx-auto">
+            <!-- Box 1 - Top Left -->
+            <div
+              class="bg-gradient-to-br from-orange-50 to-amber-50 rounded-xl aspect-square flex items-center justify-center p-4 shadow-sm border border-orange-100"
+            >
+              <div
+                class="w-full h-full bg-gradient-to-br from-orange-100 to-orange-50 rounded-lg"
+              ></div>
+            </div>
+
+            <!-- Box 2 - Top Right (spans 3 rows) -->
+            <div
+              class="bg-gradient-to-br from-orange-50 to-amber-50 rounded-xl row-span-2 flex items-center justify-center p-6 shadow-sm border border-orange-100"
+            >
+              <img
+                src="/images/fresh-1.png"
+                alt="Fresh tea leaves presentation"
+                class="w-full h-auto object-contain transition-transform duration-300 ease-in-out hover:scale-105"
+              />
+            </div>
+
+            <!-- Box 3 - Bottom Left (spans 3 rows) -->
+            <div
+              class="bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl row-span-2 flex items-center justify-center p-6 shadow-sm border border-gray-200"
+            >
+              <img
+                src="/images/fresh-2.png"
+                alt="Premium tea brewing process"
+                class="w-full h-auto object-contain transition-transform duration-300 ease-in-out hover:scale-105"
+              />
+            </div>
+
+            <!-- Box 4 - Bottom Right -->
+            <div
+              class="bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl aspect-square flex items-center justify-center p-4 shadow-sm border border-gray-200"
+            >
+              <div
+                class="w-full h-full bg-gradient-to-br from-gray-100 to-gray-50 rounded-lg"
+              ></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Text Content Area -->
+        <div class="w-full lg:w-1/2 space-y-6 lg:space-y-8">
+          <h2
+            class="text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-900 leading-tight"
+          >
+            Great Tea, Freshly<br class="hidden lg:block" />
+            <span class="text-orange-600">Presented</span>
+          </h2>
+
+          <p class="text-lg text-gray-600 leading-relaxed">
+            The meaning of Gong Cha is Chinese is to provide the best tea to
+            emperor from all possessions. It represents the highest quality and
+            self expectation. Established in 2006, Gong cha had been deeply
+            appreciated by its customers because of good words of mouth and
+            unique customized service originated from Taiwan.
+          </p>
+
+          <div class="space-y-6">
+            <div class="flex items-start gap-4">
+              <div
+                class="w-2 h-10 bg-orange-500 rounded-full mt-1 flex-shrink-0"
+              ></div>
+              <div>
+                <h3 class="text-xl font-bold text-gray-900 mb-2">
+                  Unique Taste
+                </h3>
+                <p class="text-gray-600 leading-relaxed">
+                  A unique and different style from other teapots gives a
+                  luxurious and minimalist impression that enhances your tea
+                  experience.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div
+                class="w-2 h-10 bg-orange-500 rounded-full mt-1 flex-shrink-0"
+              ></div>
+              <div>
+                <h3 class="text-xl font-bold text-gray-900 mb-2">
+                  Premium Quality
+                </h3>
+                <p class="text-gray-600 leading-relaxed">
+                  Premium quality materials that make tea more elegant and more
+                  durable while maintaining perfect temperature for optimal
+                  brewing.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Clients Review -->
+      <section
+        class="grid grid-cols-1 lg:grid-cols-2 text-white bg-gradient-to-r from-orange-400 to-red-600 rounded-xl mb-60 p-14 items-center overflow-hidden"
+      >
+        <!-- text Content Area -->
+        <div class="space-y-2 w-5/6">
+          <h3 class="text-2xl font-bold">
+            Meet Our Super <br />
+            Clients
+          </h3>
+          <p class="text-green-100 text-sm leading-relaxed">
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form, by injected
+            humour, or randomised words which don't look even slightly
+            believable.
+          </p>
+          <button class="px-2 py-1 bg-white rounded-md text-sm">
+            <span
+              class="bg-gradient-to-r from-orange-500 to-red-500 inline-block text-transparent bg-clip-text font-bold"
+            >
+              Show All</span
+            >
+          </button>
+        </div>
+        <!-- floating image content area -->
+        <!-- Top Card -->
+        <div class="relative">
+          <div
+            class="relative w-full left-8 md:left-32 md:w-3/4 bg-white text-black rounded-lg mb-10 opacity-40"
+          >
+            <div class="absolute -top-5 -left-5 bg-white rounded-full">
+              <img class="p-1" src="/images/client.png" alt="" />
+            </div>
+            <div class="flex flex-col p-10">
+              <p class="text-gray-400 mb-3">
+                We are providing the best and suitable home insurance services
+                for the people who are interested to treatment
+              </p>
+              <h4 class="font-bold">Ilham Yuda</h4>
+              <p class="text-gray-500">Businessman</p>
+            </div>
+          </div>
+          <!-- Front Card -->
+          <div class="absolute left-0 md:-left-32">
+            <div
+              class="relative w-full -top-32 md:left-32 md:w-3/4 bg-white text-black rounded-lg mb-10 z-10"
+            >
+              <div class="absolute -top-5 -left-5 bg-white rounded-full">
+                <img class="p-1" src="/images/client.png" alt="" />
+              </div>
+              <div class="flex flex-col p-10">
+                <p class="text-gray-400 mb-3 leading-relaxed">
+                  We are providing the best and suitable home insurance services
+                  for the people who are interested to treatment
+                </p>
+                <h4 class="font-bold">Ilham Yuda</h4>
+                <p class="text-gray-500">Businessman</p>
+              </div>
+            </div>
+          </div>
+          <!-- Bottom Card -->
+          <div
+            class="relative w-full left-8 md:left-32 md:w-3/4 bg-white text-black rounded-lg opacity-40"
+          >
+            <div class="absolute -top-5 -left-5 bg-white rounded-full">
+              <img class="p-1" src="/images/client.png" alt="" />
+            </div>
+            <div class="flex flex-col p-10">
+              <p class="text-gray-400 mb-3">
+                We are providing the best and suitable home insurance services
+                for the people who are interested to treatment
+              </p>
+              <h4 class="font-bold">Ilham Yuda</h4>
+              <p class="text-gray-500">Businessman</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   </body>
 </html>
